@@ -6,8 +6,7 @@ int main()
     int n, t;
     cin >> n >> t;
 
-    int current_time = 0, max_books = 0;
-    int start = 0;
+    int current_time = 0, max_books = 0, start = 0;
 
     for (int end = 0; end < n; end++)
     {
@@ -17,7 +16,6 @@ int main()
 
         while (current_time > t)
         {
-            cin >> time;
             current_time -= time;
             start++;
         }
